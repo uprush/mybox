@@ -1,0 +1,21 @@
+[submodule "opscode-cookbooks/git"]
+	path = opscode-cookbooks/git
+	url = git://github.com/opscode-cookbooks/git.git
+[submodule "opscode-cookbooks/tmux"]
+	path = opscode-cookbooks/tmux
+	url = git://github.com/opscode-cookbooks/tmux.git
+[submodule "opscode-cookbooks/vim"]
+	path = opscode-cookbooks/vim
+	url = git://github.com/opscode-cookbooks/vim.git
+[submodule "opscode-cookbooks/ubuntu"]
+	path = opscode-cookbooks/ubuntu
+	url = git://github.com/opscode-cookbooks/ubuntu.git
+[submodule "opscode-cookbooks/build-essential"]
+	path = opscode-cookbooks/build-essential
+	url = git://github.com/opscode-cookbooks/build-essential.git
+[submodule "opscode-cookbooks/zsh"]
+	path = opscode-cookbooks/zsh
+	url = git://github.com/opscode-cookbooks/zsh.git
+[submodule "opscode-cookbooks/apt"]
+	path = opscode-cookbooks/apt
+	url = git://github.com/opscode-cookbooks/apt.git
