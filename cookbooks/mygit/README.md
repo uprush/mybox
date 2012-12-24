@@ -1,0 +1,4 @@
+Description
+===========
+
+Configures my git.

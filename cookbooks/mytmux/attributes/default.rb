@@ -1,1 +1,1 @@
-default[:myvim][:user] = 'vagrant'
+default[:mytmux][:user] = 'vagrant'

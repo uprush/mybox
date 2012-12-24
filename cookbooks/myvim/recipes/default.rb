@@ -16,4 +16,5 @@ cookbook_file "/home/#{myuser}/.vimrc" do
   owner myuser
   group myuser
   mode 0644
+  action :create_if_missing
 end

@@ -1,6 +1,6 @@
 include_recipe "tmux"
 
-myuser = node[:myvim][:user]
+myuser = node[:mytmux][:user]
 
 # .tmux.conf file
 cookbook_file "/home/#{myuser}/.tmux.conf" do
@@ -8,4 +8,5 @@ cookbook_file "/home/#{myuser}/.tmux.conf" do
   owner myuser
   group myuser
   mode 0644
+  action :create_if_missing
 end
