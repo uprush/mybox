@@ -1,0 +1,1 @@
+default[:myvim][:user] = 'vagrant'

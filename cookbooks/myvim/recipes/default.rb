@@ -1,3 +1,5 @@
+include_recipe "vim"
+
 myuser = node[:myvim][:user]
 
 # the .vim directory
