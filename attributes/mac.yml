@@ -1,0 +1,12 @@
+---
+run_list:
+  # - myvim
+  - mygit
+  - mytmux
+  - myzsh
+mybox:
+  user: yifeng
+  group: staff
+  home: /Users/yifeng
+mygit:
+  name: Yifeng Jiang

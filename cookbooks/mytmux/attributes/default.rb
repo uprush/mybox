@@ -1,1 +1,1 @@
-default[:mytmux][:user] = 'vagrant'
+include_attribute "mybox"
