@@ -1,27 +1,38 @@
-include_recipe "zsh"
+case node['platform_family']
+when "mac_os_x"
+  bash "install zsh" do
+    user "root"
+    code "brew install zsh"
+    not_if { ::File.exists?("/bin/zsh") }
+  end
+else
+  include_recipe "zsh"
+end
 
-myuser = node[:myzsh][:user]
+myuser = node[:mybox][:user]
+mygroup = node[:mybox][:group]
+myhome = node[:mybox][:home]
 
 # Install oh-my-zsh
-git "/home/#{myuser}/.oh-my-zsh" do
+git "#{myhome}/.oh-my-zsh" do
   repository "https://github.com/robbyrussell/oh-my-zsh.git"
   reference "master"
   action :sync
 end
 
 # .zshrc file
-template "/home/#{myuser}/.zshrc" do
+template "#{myhome}/.zshrc" do
   source "zshrc.erb"
   owner myuser
-  group myuser
+  group mygroup
   mode 0644
-  action :create_if_missing
+  action :create
 end
 
 # zsh completions
-directory "/home/#{myuser}/.oh-my-zsh/completions" do
+directory "#{myhome}/.oh-my-zsh/completions" do
   owner myuser
-  group myuser
+  group mygroup
   mode 0755
   action :create
 end

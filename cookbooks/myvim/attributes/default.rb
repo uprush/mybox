@@ -1,1 +1,1 @@
-default[:myvim][:user] = 'vagrant'
+include_attribute "mybox"

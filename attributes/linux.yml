@@ -1,0 +1,12 @@
+---
+run_list:
+  # - myvim
+  - mygit
+  - mytmux
+  - myzsh
+mybox:
+  user: vagrant
+  group: vagrant
+  home: /home/vagrant
+mygit:
+  name: Yifeng Jiang

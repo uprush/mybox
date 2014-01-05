@@ -1,20 +1,27 @@
-include_recipe "vim"
+case node['platform_family']
+when "mac_os_x"
+  # do nothing
+else
+  include_recipe "vim"
+end
 
-myuser = node[:myvim][:user]
+myuser = node[:mybox][:user]
+mygroup = node[:mybox][:group]
+myhome = node[:mybox][:home]
 
 # the .vim directory
-remote_directory "/home/#{myuser}/.vim" do
+remote_directory "#{myhome}/.vim" do
   source "vim"
   owner myuser
-  group myuser
+  group mygroup
   mode 0755
 end
 
 # .vimrc file
-cookbook_file "/home/#{myuser}/.vimrc" do
+cookbook_file "#{myhome}/.vimrc" do
   source "vimrc"
   owner myuser
-  group myuser
+  group mygroup
   mode 0644
   action :create_if_missing
 end
