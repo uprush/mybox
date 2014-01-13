@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[yfj66 ]]></content>
+    <tabTrigger>mm</tabTrigger>
+    <scope>source.ruby, source.java, source.md, source.txt</scope>
+    <description>my mark</description>
+</snippet>
