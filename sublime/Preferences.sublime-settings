@@ -1,7 +1,7 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"detect_slow_plugins": false,
-	"ensure_newline_at_eof_on_save": false,
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -40,7 +40,7 @@
 		"log"
 	],
 	"font_face": "SourceCodePro-Regular",
-	"font_size": 15.0,
+	"font_size": 14.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -54,7 +54,7 @@
 		"show_minimap": false
 	},
 	"save_on_focus_lost": false,
-	"tab_size": 2,
+	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"spell_check": true,
