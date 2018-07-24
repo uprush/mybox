@@ -48,3 +48,7 @@ setopt <%= node[:myzsh][:opts].join(" ") %>
 unsetopt correct
 
 export PATH=$PATH:~/bin
+
+# colors for ls
+LS_COLORS=$LS_COLORS:'ex=00;31:di=01;36:ln=01;35' ; export LS_COLORS
+
